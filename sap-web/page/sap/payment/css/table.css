@@ -1,0 +1,65 @@
+@charset "utf-8";
+.page .fullWidth{
+  	width:100%;
+}
+.page .tableHead {
+  border:none;
+  border-spacing:0 15px;
+}
+.page .colorRed{
+  color:red
+}
+.page .multiRows{
+  border:black 1px solid;
+  text-align:center
+}
+.page .tdMinWidth{
+  min-width:100px;
+}
+.page .tableOne {
+  overflow-x:scroll;
+}
+.page .tableTwo {
+  overflow-x:scroll;
+}
+/*PC端*/
+@media only screen and (min-width: 520px) and (max-width:2000px) {
+	.page th {
+		width: 10%;
+		min-width: 180px;
+		text-align: left;
+	}
+	.page td {
+		width: 30%;
+	}
+	.page input {
+		min-width: 120px;
+	}
+	.page .space {
+		width: 20%;
+	}
+}
+
+/*移动端*/
+@media only screen and (max-width:520px) {
+	.page th {
+		width: 50%;
+		min-width: 180px;
+		text-align: left;
+		display: table-cell;
+	}
+	.page td {
+		min-width: 120px;
+		width: 50%;
+		display: table-cell;
+	}
+	.page input {
+		min-width: 120px;
+	}
+	.page .space {
+		width: 0px;
+	}	
+}
+
+
+

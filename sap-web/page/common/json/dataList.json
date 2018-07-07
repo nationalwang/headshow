@@ -1,0 +1,37 @@
+{
+	"TR-TR034":{
+		"val":[
+			"zseqNo","bukrs","prctr","zssbk","zssqy","zsfhzgs","zkhyhfh","bankl","bankn","zxmmc","zsfnrzjgk",
+			"zkhlhmc","zkhlhh","zzhmc","zkhrq","zsfzzhms","zsjmzh","zkhgj","zkhsf","zkhcs","waers","zzhsx","zzhgn",
+			"zsfsx","zjglx","zsfgxzh","zfsx","dyzzf","sfmrbdzzh","sffymrhkzh","sftyzkmrbdzzh","zsfajzh","zajjzsj",
+			"zyhlb","zzhlx","zxdje","zbnblxdyy","zsfktyqzl","zyqzlktyy","zsfjtgl","zjtgly","zsfkyktzjc","zbjrzjcyy",
+			"zsfktqywy","zukeyczy","zukeyshy","zukeygly","zylyjcwz","zylyjsz","zylyjqtsz","hkont","zyylxr","zyhdh","zyhdz",
+			"zjbr","zzhblyy","zblzhkl","zzt","ztype","zxhrq","zyqzlblqk","zzjcsqsp","zjbrlxdh","zxmgsdz","zyqzlzjczt",
+			"erdat","ertim","ernam","aedat","aetim","aenam"
+			],
+		"Key":[
+			"单据编号", "公司代码", "利润中心", "所属板块", "所属区域", "是否合资公司", "开户银行分行",
+			"银行编号", "银行账号", "项目名称", "是否纳入资金管控", "开户联行名称", "开户联行号", "账户名称",
+			"开户日期", "是否子账户", "上级母账户", "开户国家代码", "开户省份", "开户城市", "货币码", "账户属性",
+			"账户功能", "收付属性", "监管类型", "是否共享账户", "总分属性", "对应总账户", "是否默认本地转账户",
+			"是否费用默认还款账户", "是否退业主款默认本地转账户", "是否按揭账户", "按揭截止时间", "银行类别",
+			"账户类型", "协定金额", "不能办理协定原因", "是否开通银企直连", "银企直连开通原因", "是否集团管理", 
+			"集团管理员", "是否可以开通资金池", "不加入资金池原因", "是否开通起企业网银", "UKEY操作员",
+			"UKEY审核员", "UKEY管理员", "预留印鉴-财务章", "预留印鉴-私章", "预留印鉴-其他私章",
+			"总账科目编号", "银行联系人", "银行电话", "银行地址", "经办人", "账户办理原因", "账户办理开立",
+			"状态", "单据类型", "销户日期", "银企直连办理情况", "银企直连及资金池办理申请审批状态",
+			"经办人联系电话", "项目公司地址", "银企直联及资金池申请审批状态", "记录建立日期", "创建时间",
+			"创建对象的人员名称", "最后更改的日期", "修改时间", "更改对象用户的名称"
+			],
+		"length":"71",
+		"column":"2",
+		"children":[
+			{
+				
+			},
+			{
+				
+			}
+		]
+	}
+}

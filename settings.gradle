@@ -1,0 +1,8 @@
+rootProject.name = 'headshow'
+include 'common'
+include 'sap-file-service'
+include 'sap-identity-service'
+include 'sap-proceeds-service'
+include 'sap-payment-service'
+include 'sap-sys-service'
+include 'sap-web'

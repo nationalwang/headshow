@@ -1,0 +1,190 @@
+{
+	"TR-TR034":{
+		"val":[
+			"zseqNo","bukrs","prctr","zssbk","zssqy","zsfhzgs","zkhyhfh","bankl","bankn","zxmmc","zsfnrzjgk",
+			"zkhlhmc","zkhlhh","zzhmc","zkhrq","zsfzzhms","zsjmzh","zkhgj","zkhsf","zkhcs","waers","zzhsx","zzhgn",
+			"zsfsx","zjglx","zsfgxzh","zfsx","dyzzf","sfmrbdzzh","sffymrhkzh","sftyzkmrbdzzh","zsfajzh","zajjzsj",
+			"zyhlb","zzhlx","zxdje","zbnblxdyy","zsfktyqzl","zyqzlktyy","zsfjtgl","zjtgly","zsfkyktzjc","zbjrzjcyy",
+			"zsfktqywy","zukeyczy","zukeyshy","zukeygly","zylyjcwz","zylyjsz","zylyjqtsz","hkont","zyylxr","zyhdh","zyhdz",
+			"zjbr","zzhblyy","zblzhkl","zzt","ztype","zxhrq","zyqzlblqk","zzjcsqsp","zjbrlxdh","zxmgsdz","zyqzlzjczt",
+			"erdat","ertim","ernam","aedat","aetim","aenam"
+			],
+		"Key":[
+			"单据编号", "公司代码", "利润中心", "所属板块", "所属区域", "是否合资公司", "开户银行分行",
+			"银行编号", "银行账号", "项目名称", "是否纳入资金管控", "开户联行名称", "开户联行号", "账户名称",
+			"开户日期", "是否子账户", "上级母账户", "开户国家代码", "开户省份", "开户城市", "货币码", "账户属性",
+			"账户功能", "收付属性", "监管类型", "是否共享账户", "总分属性", "对应总账户", "是否默认本地转账户",
+			"是否费用默认还款账户", "是否退业主款默认本地转账户", "是否按揭账户", "按揭截止时间", "银行类别",
+			"账户类型", "协定金额", "不能办理协定原因", "是否开通银企直连", "银企直连开通原因", "是否集团管理", 
+			"集团管理员", "是否可以开通资金池", "不加入资金池原因", "是否开通起企业网银", "UKEY操作员",
+			"UKEY审核员", "UKEY管理员", "预留印鉴-财务章", "预留印鉴-私章", "预留印鉴-其他私章",
+			"总账科目编号", "银行联系人", "银行电话", "银行地址", "经办人", "账户办理原因", "账户办理开立",
+			"状态", "单据类型", "销户日期", "银企直连办理情况", "银企直连及资金池办理申请审批状态",
+			"经办人联系电话", "项目公司地址", "银企直联及资金池申请审批状态", "记录建立日期", "创建时间",
+			"创建对象的人员名称", "最后更改的日期", "修改时间", "更改对象用户的名称"
+			],
+		"length":"71"
+	},
+	"AP001":{
+		"val":[
+			"ywsqdh","ywsqdgjz","myqyguid","ywlx","bukrs","bukrs","prctr","lyxt","hth","flgDf","dfgs","dflrzx",
+			"flgBdfgsycl","ybje","bz","zdr","flgZjkk","flgJjfk","lifnr","sy","flgGylrz","gylrzlx"
+		],
+		"Key":[
+			"业务申请单号","业务系统单据关键字","明源区域GUID ","应付类型","公司代码","利润中心","来源系统",
+			"K2审批号","要求付款时间","合同号","是否代付","代付公司","代付利润中心","被代付公司是否已成立",
+			"原币金额","币种","制单人","追加扣款","是否紧急付款","供应商","事由","是否供应链融资","供应链融资类型"
+		],
+		"length":"23",
+		"item":{
+			"val":[
+				"fylx","ysly","yszybm","hsrzbm","mbgs","gzdw","yfdh","flgHtyf","yjfhrq","flgZc","flgJgc",
+				"flgYxwpfk","flgKhs","kxmc","xmmc","xmqq","tzkxlx","cbglkm","kkid","kkpp","wl","ybje","sy"
+			],
+			"Key":[
+				"费用类型","预算来源","预算占用部门(基金中心)","核算入账部门(成本中心)","目标公司","挂账单位",
+				"原预付单据号","是否合同预付","预计返还日期","是否资产","是否甲供材","是否允许无票付款","是否可回收",
+				"款项名称","项目名称","项目期区","投策款项类型","成本管理科目","扣款ID","扣款KKPP","物料(大类)",
+				"原币金额","事由"
+			],
+			"length":"23"
+		},
+		"skdwItem":{
+			"val":[
+				"skdw","skdwhm","skyhzh","khyh"
+			],
+			"Key":[
+				"收款单位","收款单位户名","收款银行账号","开户银行"
+			],
+			"length":"4"
+		}
+
+	},
+	"AR108":{
+		"val":[
+			"zskdh","prctr","belnr","budat","zpzzt","zdjlx","zlcbh","zshr","zdjh","zdjrq","zshrq","zdjzt","zsfld",
+			"zspzt","bktxt","zsmrq","zsmr","erdat","ertim","ernam"
+		],
+		"Key":[
+			"SAP_ID","利润中心","会计凭证号码","凭证中的过帐日期","凭证状态","单据类型","流程编号","审核人","单据号",
+			"单据日期","审核日期","单据状态","是否已拉单","审批状态","抬头摘要","扫描日期","扫描人","记录建立日期",
+			"创建时间","创建对象的人员名称"
+		],
+		"length":"20",
+		"refundOrderItem":{
+			"val":[
+				"zskdh","zhxh","lifnr","belnr","budat","zpzzt","zsyhz","zskyhlb","zskhm","zskyh","zzfzt","zfjdm","zxm",
+				"zxmdm","zhdjh","dmbtr","zbhsj","zsfkh","kunnr","zkhmc","zcplx","zkxmx","mwskz","zse","zzffs","zzfrq",
+				"zhxzt","sgtxt","zywlx","zch","zhxmzt","zfkzh","zybhs","zybse","zybbh","waers","kursf","zszxm","zzjjh","zxjll"
+			],
+			"Key":[
+				"SAP_ID","SAP_ID行序号","供应商或债权人的帐号","会计凭证号码","凭证中的过帐日期","凭证状态","收款银行账号",
+				"客户收款银行类别","收款户名","收款开户银行","支付状态","房间代码","项目","项目代码","行单据号","金额","本币不含税金额",
+				"是否客户发起","客户编号","客户名称","产品类型","款项明细","税率","税额","支付方式","支付日期","核销状态","项目文本",
+				"业务类型","筹号","行项目状态","付款银行账号","原币含税金额","原币税额","原币不含税金额","货币码","汇率","收支项目编码",
+				"资金计划项目","现金流量项目"
+			],
+			"length":"40"
+		},
+		"length":"71",
+		"column":"2",
+		"children":[
+			{
+				
+			},
+			{
+				
+			}
+		]
+	},
+	"FM007":{
+		"val":[
+			"tzdh","fikrs","djlx","gjahr","fipex","tizr","tzrq","wbzy"
+		],
+		"Key":[
+			"调整单号","财务管理范围","单据类型","会计年度","预算承载科目","调整人","调整日期","摘要"
+		],
+		"length":"8",
+		"budgetRowItemDTOs":{
+			"val":[
+				"tzdh","djhh","fictr","ysqj","adjst","bzxx"
+			],
+			"Key":[
+				"调整单号","单据行项目号","基金中心","期间","调整数","备注"
+			],
+			"length":"6"
+		}
+	},
+	"TR096":{
+		"val":[
+			"zdjbh","zcom","butxt","zpc","ktext","zddfx","zddfxn","zdjlx","zddlyn","erdat","ernam"
+		],
+		"Key":[
+			"单据编号","公司代码","公司代码描述","利润中心","利润中心描述","调度方向","调度方向描述","单据类型","单据类型类型","创建时间","创建人"
+		],
+		"length":"11",
+		"item":{
+			"val":[
+				"znum","zdjrq","zscom","zscom_t","zspc","zspc_t","zskqy","zskbk","zskbk_t","zcdxz","zcdxz_t","znbzh","znbzh_t","zssffz","zsbb","zsbb_t","zszjyt","zszjyt_t","zfkgs","zfkgs_t","zfklrzx","zfklrzx_t","zfkqy","zfkbk","zfkbk_t","zffcdxz","zffcdxz_t","zffnbzh","zffnbzh_t","zfsffz","zfbb","zfbb_t","zzjyt","zzjyt_t","zzjlx","zzjlx_t","zje","zbz","erdat","ernam","aedat","aenam"
+			],
+			"Key":[
+				"单据行号","单据日期","收款公司","收款公司描述","收款利润中心","收款利润中心描述","收款区域","收款板块","收款板块描述","收方存贷性质","收方存贷性质描述","收方内部账号","收方内部账号描述","是否分灶","币种","收方币种描述","资金用途","收方资金用途描述","付款公司","付款公司描述","付款利润中心","付款利润中心描述","付款区域","付款板块","付款板块描述","付方存贷性质","付方存贷性质描述","付方内部账号","付方内部账号描述","是否分灶","币种","付方币种描述","资金用途","付方资金用途描述","资金类型","资金类型描述","金额","备注","创建时间","创建人","最后修改时间","最后修改人"
+			],
+			"length":"42"
+		}
+	},
+	"FM005":{
+		"val":[
+			"tzdh","fikrs","djlx","gjahr","fund","tizr","tzrq","wbzy"
+		],
+		"Key":[
+			"调整单号","财务管理范围","单据类型","会计年度","专项类别","调整人","调整日期","摘要"
+		],
+		"length":"8",
+		"item":{
+			"val":[
+				"tzdh","djhh","fictr","ysqj","adjst","bzxx"
+			],
+			"Key":[
+				"调整单号","单据行项目号","基金中心","期间","调整数","备注"
+			],
+			"length":"6"
+		}
+	},
+	"FM045":{
+		"val":[
+			"xjdh","fikrs","gjahr","tijr","tjrq","wbzy"
+		],
+		"Key":[
+			"单号","财务管理范围","会计年度","制单人","制单日期","摘要"
+		],
+		"length":"6",
+		"item":{
+			"val":[
+				"xjdh","djhh","fictr","beschr","fipex","bezei","tval01","tval02","tval03","tval04","tval05","tval06","tval07","tval08","tval09","tval10","tval11","tval12","tval99","bzxx"
+			],
+			"Key":[
+				"单号","单据行项目号","基金中心","承载部门","预算承载科目","承担科目描述","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月","合计","备注"
+			],
+			"length":"20"
+		}
+	},
+	"TR020-02":{
+		"val":[
+			"zdjbh","zbukrs","zbutxt","zprctr","zltext","zdjlxnum","zdjlxms","zszxm","zszxmn","zxjllbm","zxjllmc","zywlx","twaers","ltext","bankn1","bankn2","zywsx1","zywsx2","zywsm","zzdrq","zzdr","zzyxx","zdjzt","zzjhv","zbbje","zwbje"
+		],
+		"Key":[
+			"单据编号","公司代码","公司名称","利润中心","利润中心文本","单据类型","单据类型描述","收支项目编码","收支项目名称","现金流量编码","现金流量名称","业务类型","货币编码","货币名称","本币账号","外币账号","本币业务事项","外币业务事项","业务说明","制单日期","制单人","摘要信息","单据状态","直接汇率","本币金额","外币金额"
+		],
+		"length":"26"
+	},
+	"TR020-01":{
+		"val":[
+			"zuuid","zdjbh","zbukrs","zbutxt","zprctr","zltext","zdjlxnum","zdjlxms","zszxm","zszxmn","zxjllbm","zxjllmc","twaers","ltext","bankn1","bankn2","zhcywlx","zhrywlx","zhzsm","zhzje","zzdrq","zzdr","zzyxx","zxjllxm"
+		],
+		"Key":[
+			"唯一标识","单据编号","公司代码","公司名称","利润中心","利润中心文本","单据类型","单据类型描述","收支项目编码","收支项目名称","现金流量编码","现金流量名称","货币编码","货币名称","划出银行账号","划入银行账号","划出业务类型","划入业务类型","划转说明","划转金额","制单日期","制单人","摘要信息","现金流量项目"
+		],
+		"length":"24"
+	}
+}

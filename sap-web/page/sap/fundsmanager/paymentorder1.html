@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>拉单付款K2审批流程</title>
+	<link rel="stylesheet" type="text/css" href="../../common/css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/table.css">
+	<script type="text/javascript" src="../../common/js/jquery/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="../../common/js/common.js"></script>
+	<script type="text/javascript" src="js/paymentorder.js"></script>
+
+</head>
+<body>
+	<div class="page" id="paymentorder1">
+		<div class="tableTitle">拉单付款K2审批流程</div>
+		<hr style="margin-top:20px;"/>
+		<table class="fullWidth tableHead form">
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>公司代码:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="BUKRS" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>利润中心:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="PRCTR" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>成本中心:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="KOSTL" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>付款单类型:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="ZFKDLX" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>付款单据号:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="ZFKDNO" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>对账标识码:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="ZDZBSM" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr>  
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>来源单据号:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="YFDH" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>来源单据类型:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="YWLX" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>止付付款单单据号:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="ZFFKDNUM" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>来源系统:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="LYXT" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>供应商(含员工供应商):
+				  </td>
+  				<td style="width:25%;">
+					  <input id="SKDW" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>来源单据状态:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="DJZT" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>要求付款时间:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="YQFKSJ" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>合同号:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="HTH" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>紧急标记:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="FLG_JJFK" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>是否共享:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="FLG_GX" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>收款银行账号:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="SKYHZH" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>收款银行账户名:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="SKDWHM" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>收款银行联行号(人行号):
+				  </td>
+  				<td style="width:25%;">
+					  <input id="SKBANKL" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>结算方式:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="ZJSFS" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>付款银行账户:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="ZFKYHZH" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>付款银行账户名:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="ZFKYHZHM" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>付款银行联行号(人行号):
+				  </td>
+  				<td style="width:25%;">
+					  <input id="FKBANKL" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>币种:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="WAERS" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>汇率:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="KURSF" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>原币金额:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="YBJE" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>本币金额:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="BBJE" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>可拉单金额(申请付款金额):
+				  </td>
+  				<td style="width:25%;">
+					  <input id="ZKLDJE" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>本次支付金额(本次付款金额合计):
+				  </td>
+  				<td style="width:25%;">
+					  <input id="ZBCZFJE" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>剩余拉单金额(未付金额合计):
+				  </td>
+  				<td style="width:25%;">
+					  <input id="ZSYLDJE" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>代付公司代码:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="DFGS" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>代付利润中心:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="DFLRZX" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>代付应付款单:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="DFYFD" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>被代付公司:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="BDFGS" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr> 
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>被代付利润中心:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="BDFLRZX" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>被代付应付款单:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="BDFYFD" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>被代付公司是否已成立:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="FLG_BDFGSYCL" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>事由:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="SY" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>源头单据摘要:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="ZTXT" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>报文摘要:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="ZBWTXT" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>单据审批状态:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="ZDJSPZT" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>结算状态 :
+				  </td>
+  				<td style="width:25%;">
+					  <input id="ZZFZT" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr> 			 			  			  			  			  						  	
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>止付/冻结状态:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="ZFLG_ZFTFZT" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>供应链融资类型(补贴比率):
+				  </td>
+  				<td style="width:25%;">
+					  <input id="ZBTBL" class="fullWidth" placeholder="必填"/>
+				 </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>贷入申请状态:
+				 </td>
+  				<td style="width:25%;">
+					  <input id="ZSPZT" class="fullWidth" placeholder="必填"/>
+				 </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>业务系统UUID:
+				 </td>
+  				<td style="width:25%;">
+					  <input id="ZUUID" class="fullWidth" placeholder="必填"/>
+				 </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>保理公司:
+				 </td>
+  				<td style="width:25%;">
+					  <input id="ZBLGS" class="fullWidth" placeholder="必填"/>
+				 </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>K2提交日期:
+				 </td>
+  				<td style="width:25%;">
+					  <input id="ZTJSPRQ" class="fullWidth" placeholder="必填"/>
+				</td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>K2审批号:
+				 </td>
+  				<td style="width:25%;">
+					  <input id="ZSPH" class="fullWidth" placeholder="必填"/>
+				 </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>K2审批日期:
+				 </td>
+  				<td style="width:25%;">
+					  <input id="ZSPRQ" class="fullWidth" placeholder="必填"/>
+				 </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>签字人:
+				 </td>
+  				<td style="width:25%;">
+					  <input id="ZQZNAM" class="fullWidth" placeholder="必填"/>
+				 </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>签字日期:
+				 </td>
+  				<td style="width:25%;">
+					  <input id="ZQZSJ" class="fullWidth" placeholder="必填"/>
+				 </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>支付人:
+				 </td>
+  				<td style="width:25%;">
+					  <input id="ZZFNAM" class="fullWidth" placeholder="必填"/>
+				 </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>支付日期:
+				 </td>
+  				<td style="width:25%;">
+					  <input id="ZZFSJ" class="fullWidth" placeholder="必填"/>
+				 </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>制单人:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="ZDR" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>源头单据创建日期:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="CJRQ" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>单据创建日期:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="ERDAT" class="fullWidth" placeholder="必填"/>
+				  </td>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>预计支付日期:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="ZYJZFRQ" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr>
+			<tr>
+  				<td style="width:15%;">
+					  <a class="colorRed">*</a>实际支付日期:
+				  </td>
+  				<td style="width:25%;">
+					  <input id="ZSJZFRQ" class="fullWidth" placeholder="必填"/>
+				  </td>
+  		</tr>
+		</table>
+		<hr style="margin-top:20px;"/>
+		<div class="tableOne rowBox"></div>
+	</div>
+</body>
+</html>

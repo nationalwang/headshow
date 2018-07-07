@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>资金划转</title>
+	<link rel="stylesheet" type="text/css" href="../../common/css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/table.css">
+	<script type="text/javascript" src="../../common/js/jquery/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../../common/js/common.js"></script>
+	<script type="text/javascript" src="js/fundtrans.js"></script>
+</head>
+<body>
+	<div class="page" id="fundtrans2">
+		<div class="tableTitle">资金划转</div>
+		<hr style="margin-top:20px;"/>	
+		<table class="fullWidth tableHead form">
+			<tr>
+  				<td style="width:15%;">
+  					<a class="colorRed">*</a>唯一标识:
+  				</td>
+  				<td style="width:25%;">
+  					<input id="ZUUID" class="fullWidth" placeholder="必填"/></td>
+  				<td style="width:15%;"><a class="colorRed">*</a>单据编号:</td>
+  				<td style="width:25%;"><input id="ZDJBH" class="fullWidth" placeholder="必填"/></td>
+  			</tr>
+  			<tr>
+  				<td><a class="colorRed">*</a>公司代码:</td>
+  				<td style="width:25%;"><input id="ZBUKRS" class="fullWidth" placeholder="必填"/></td>
+  				<td style="width:15%;"><a class="colorRed">*</a>公司名称:</td>
+  				<td style="width:25%;"><input id="ZBUTXT" class="fullWidth" placeholder="必填"/></td>
+  			</tr>
+  			<tr>
+  				<td style="width:15%;"><a class="colorRed">*</a>利润中心:</td>
+  				<td style="width:25%;"><input id="ZPRCTR" class="fullWidth" placeholder="必填"/></td>
+  				<td style="width:15%;"><a class="colorRed">*</a>利润中心文本:</td>
+  				<td style="width:25%;"><input id="ZLTEXT" class="fullWidth" placeholder="必填"/></td>
+  			</tr>
+  			<tr>
+  				<td style="width:15%;"><a class="colorRed">*</a>单据类型:</td>
+  				<td style="width:25%;"><input id="ZDJLXNUM" class="fullWidth" placeholder="必填"/></td>
+  				<td style="width:15%;"><a class="colorRed">*</a>单据类型描述:</td>
+  				<td style="width:25%;"><input id="ZDJLXMS" class="fullWidth" placeholder="必填"/></td>
+  			</tr>
+  			<tr>
+  				<td style="width:15%;"><a class="colorRed">*</a>收支项目编码:</td>
+  				<td style="width:25%;"><input id="ZSZXM" class="fullWidth" placeholder="必填"/></td>
+  				<td style="width:15%;"><a class="colorRed">*</a>收支项目名称:</td>
+  				<td style="width:25%;"><input id="ZSZXMN" class="fullWidth" placeholder="必填"/></td>
+  			</tr>
+  			<tr>
+  				<td style="width:15%;"><a class="colorRed">*</a>现金流量编码:</td>
+  				<td style="width:25%;"><input id="ZXJLLBM" class="fullWidth" placeholder="必填"/></td>
+  				<td style="width:15%;"><a class="colorRed">*</a>现金流量名称:</td>
+  				<td style="width:25%;"><input id="ZXJLLMC" class="fullWidth" placeholder="必填"/></td>
+  			</tr>
+  			<tr>
+  				<td style="width:15%;"><a class="colorRed">*</a>货币编码:</td>
+  				<td style="width:25%;"><input id="TWAERS" class="fullWidth" placeholder="必填"/></td>
+  				<td style="width:15%;"><a class="colorRed">*</a>货币名称:</td>
+  				<td style="width:25%;"><input id="LTEXT" class="fullWidth" placeholder="必填"/></td>
+  			</tr>
+  			<tr>
+  				<td style="width:15%;"><a class="colorRed">*</a>划出银行账号:</td>
+  				<td style="width:25%;"><input id="BANKN1" class="fullWidth" placeholder="必填"/></td>
+  				<td style="width:15%;"><a class="colorRed">*</a>划入银行账号:</td>
+  				<td style="width:25%;"><input id="BANKN2" class="fullWidth" placeholder="必填"/></td>
+  			</tr>
+  			<tr>
+  				<td style="width:15%;"><a class="colorRed">*</a>划出业务类型:</td>
+  				<td style="width:25%;"><input id="ZHCYWLX" class="fullWidth" placeholder="必填"/></td>
+  				<td style="width:15%;"><a class="colorRed">*</a>划入业务类型:</td>
+  				<td style="width:25%;"><input id="ZHRYWLX" class="fullWidth" placeholder="必填"/></td>
+  			</tr>
+  			<tr>
+  				<td style="width:15%;"><a class="colorRed">*</a>划转说明:</td>
+  				<td style="width:25%;"><input id="ZHZSM" class="fullWidth" placeholder="必填"/></td>
+  				<td style="width:15%;"><a class="colorRed">*</a>划转金额:</td>
+  				<td style="width:25%;"><input id="ZHZJE" class="fullWidth" placeholder="必填"/></td>
+  			</tr>
+  			<tr>
+  				<td style="width:15%;"><a class="colorRed">*</a>制单日期:</td>
+  				<td style="width:25%;"><input id="ZZDRQ" class="fullWidth" placeholder="必填"/></td>
+  				<td style="width:15%;"><a class="colorRed">*</a>制单人:</td>
+  				<td style="width:25%;"><input id="ZZDR" class="fullWidth" placeholder="必填"/></td>
+  			</tr>
+  			<tr>
+  				<td style="width:15%;"><a class="colorRed">*</a>摘要信息:</td>
+  				<td style="width:25%;"><input id="ZZYXX" class="fullWidth" placeholder="必填"/></td>
+  				<td style="width:15%;"><a class="colorRed">*</a>现金流量项目:</td>
+  				<td style="width:25%;"><input id="ZXJLLXM" class="fullWidth" placeholder="必填"/></td>
+  			</tr>
+		</table>	
+	</div>
+</body>
+</html>
+
