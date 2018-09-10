@@ -1,12 +1,17 @@
 package com.headshow.controller.identity;
 
+import com.headshow.common.utils.apiresult.AbstractApiResult;
 import com.headshow.common.utils.code.CodeUtils;
+import com.headshow.entity.dto.AuthUserLoginDTO;
+import com.headshow.service.AuthUserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -21,6 +26,16 @@ import java.io.IOException;
 @Api(value = "back", tags = {"identity"})
 @RequestMapping(value = "/log")
 public class LoginController {
+    @Resource
+    private AuthUserService authUserService;
+
+    @ApiOperation(value = "登陆方法", produces = "application/json")
+    @PostMapping(value = "/login")
+    public AbstractApiResult login(@RequestBody AuthUserLoginDTO authUserLoginDTO) {
+        authUserService.login(authUserLoginDTO);
+
+        return AbstractApiResult.success("");
+    }
 
     @ApiOperation(value = "获取验证码方法", produces = "application/json")
     @PostMapping(value = "/code/check.jpg")
