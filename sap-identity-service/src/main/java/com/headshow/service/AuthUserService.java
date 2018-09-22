@@ -17,4 +17,5 @@ public interface AuthUserService {
      * @param authUserLoginDTO
      */
     void login(@Valid AuthUserLoginDTO authUserLoginDTO);
+
 }
