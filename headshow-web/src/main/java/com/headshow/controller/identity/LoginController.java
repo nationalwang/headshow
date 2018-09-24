@@ -6,6 +6,7 @@ import com.headshow.entity.dto.AuthUserLoginDTO;
 import com.headshow.service.AuthUserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.java.Log;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +17,7 @@ import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.logging.Level;
 
 /**
  * @author linlangleo
@@ -25,6 +27,7 @@ import java.io.IOException;
 @RestController
 @Api(value = "back", tags = {"identity"})
 @RequestMapping(value = "/log")
+@Log
 public class LoginController {
     @Resource
     private AuthUserService authUserService;
@@ -49,6 +52,8 @@ public class LoginController {
         String code = util.getString();
         System.err.println(code);
         request.getSession().setAttribute("code", code);
+        log.log(Level.INFO, util.getString());
+
         // 输出打web页面
         ImageIO.write(util.getImage(), "jpg", response.getOutputStream());
     }
